@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repeater_title"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repeater_subtitle"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:layout_marginBottom="16dp" />
+
+        <!-- No Wi-Fi warning banner -->
+        <TextView
+            android:id="@+id/banner_no_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/repeater_no_wifi_warning"
+            android:textColor="@color/warning_text"
+            android:background="@color/warning_background"
+            android:padding="12dp"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Battery warning -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/repeater_battery_warning"
+            android:textColor="@color/warning_text"
+            android:background="@color/warning_background"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Toggle switch -->
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_repeater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repeater_title"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Progress indicator -->
+        <ProgressBar
+            android:id="@+id/progress_repeater"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Credentials card -->
+        <LinearLayout
+            android:id="@+id/layout_credentials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/repeater_network_label"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_network_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/repeater_password_label">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/text_passphrase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <!-- QR code image -->
+        <ImageView
+            android:id="@+id/image_qr_code"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/hotspot_qr_description"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>

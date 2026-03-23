@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ApexSync</string>
+
+    <!-- Bottom navigation labels -->
+    <string name="nav_hotspot">Hotspot</string>
+    <string name="nav_repeater">Repeater</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Hotspot screen -->
+    <string name="hotspot_title">Wi-Fi Hotspot</string>
+    <string name="hotspot_subtitle">Share your cellular data with nearby devices</string>
+    <string name="hotspot_starting">Starting hotspot…</string>
+    <string name="hotspot_active">Hotspot active</string>
+    <string name="hotspot_failed">Hotspot failed (error %d)</string>
+    <string name="hotspot_ssid_label">Network name (SSID)</string>
+    <string name="hotspot_password_label">Password</string>
+    <string name="hotspot_qr_description">QR code to join the hotspot</string>
+    <string name="open_system_tethering">Open Tethering Settings</string>
+    <string name="open_system_tethering_hint">Use system tethering to share internet access</string>
+    <string name="cannot_open_tethering_settings">Could not open tethering settings</string>
+
+    <!-- Hotspot notification -->
+    <string name="hotspot_notification_channel_name">Hotspot</string>
+    <string name="hotspot_notification_channel_desc">Displays the active hotspot status</string>
+
+    <!-- Repeater screen -->
+    <string name="repeater_title">Wi-Fi Repeater</string>
+    <string name="repeater_subtitle">Extend your Wi-Fi range using Wi-Fi Direct</string>
+    <string name="repeater_starting">Starting repeater…</string>
+    <string name="repeater_active">Repeater active</string>
+    <string name="repeater_failed">Repeater failed: %s</string>
+    <string name="repeater_network_label">Network name</string>
+    <string name="repeater_password_label">Password</string>
+    <string name="repeater_battery_warning">⚠ Using the repeater may increase battery usage.</string>
+    <string name="repeater_no_wifi_warning">⚠ Connect to a Wi-Fi network before starting the repeater.</string>
+
+    <!-- Repeater notification -->
+    <string name="repeater_notification_channel_name">Repeater</string>
+    <string name="repeater_notification_channel_desc">Displays the active repeater status</string>
+
+    <!-- Permissions -->
+    <string name="permission_required_hotspot">Location permission is required to start the hotspot.</string>
+    <string name="permission_required_repeater">Location or Nearby Wi-Fi Devices permission is required to start the repeater.</string>
+
+    <!-- Common actions -->
+    <string name="action_stop">Stop</string>
+    <string name="show">Show</string>
+    <string name="hide">Hide</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_theme_title">App theme</string>
+    <string name="settings_theme_summary">Choose light, dark, or follow system</string>
+    <string name="settings_notifications_title">Show notifications</string>
+    <string name="settings_notifications_summary">Display persistent notification while a service is active</string>
+    <string name="settings_about_title">About</string>
+    <string name="settings_version_title">Version</string>
+    <string name="settings_github_title">GitHub</string>
+    <string name="settings_github_url">https://github.com/apexcaliberlabs/ApexSync</string>
+    <string name="settings_license_title">License</string>
+    <string name="settings_license_summary">Apache License 2.0</string>
+</resources>

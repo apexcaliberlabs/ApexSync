@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Appearance -->
+    <PreferenceCategory android:title="Appearance">
+        <ListPreference
+            android:key="theme"
+            android:title="@string/settings_theme_title"
+            android:summary="@string/settings_theme_summary"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"
+            android:defaultValue="system"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <!-- Notifications -->
+    <PreferenceCategory android:title="Notifications">
+        <SwitchPreferenceCompat
+            android:key="notifications_enabled"
+            android:title="@string/settings_notifications_title"
+            android:summary="@string/settings_notifications_summary"
+            android:defaultValue="true"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+    <!-- About -->
+    <PreferenceCategory android:title="@string/settings_about_title">
+        <Preference
+            android:key="version"
+            android:title="@string/settings_version_title"
+            android:summary="1.0.0"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:key="github"
+            android:title="@string/settings_github_title"
+            android:summary="@string/settings_github_url"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:key="license"
+            android:title="@string/settings_license_title"
+            android:summary="@string/settings_license_summary"
+            app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
