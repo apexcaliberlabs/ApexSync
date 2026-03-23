@@ -1,0 +1,24 @@
+{
+    "name": "Android Dev Cloud",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:1": {}
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "mathiasfrohlich.Kotlin",
+                "ms-azuretools.vscode-docker",
+                "google.android-studio-design-tools"
+            ],
+            "settings": {
+                "java.jdk.install.url": "https://adoptium.net/"
+            }
+        }
+    },
+    "remoteUser": "vscode",
+    "postCreateCommand": "chmod +x gradlew && ./gradlew help"
+}
